@@ -19,6 +19,8 @@
   "author": "junyang",
   "license": "MIT",
   "dependencies": {
+    "@ads/node-utils": "^1.0.10",
+    "@babel/eslint-parser": "^7.14.3",
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.23.3",

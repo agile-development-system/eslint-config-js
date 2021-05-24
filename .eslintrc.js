@@ -4,6 +4,6 @@
  */
 module.exports = {
     extends: [
-        require.resolve('./lib/index.js')
+        require.resolve('./lib/index.js'),
     ],
 };
