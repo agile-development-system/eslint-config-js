@@ -1,0 +1,29 @@
+{
+  "name": "@ads/eslint-config-js",
+  "version": "1.0.0",
+  "description": "ADS的js eslint配置",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/agile-development-system/eslint-config-js.git"
+  },
+  "keywords": [
+    "eslint",
+    "ads",
+    "config",
+    "js"
+  ],
+  "author": "junyang",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jsdoc": "^35.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
+}
