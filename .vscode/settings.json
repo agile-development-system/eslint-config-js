@@ -1,0 +1,13 @@
+{
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "json5",
+        "czrc"
+    ],
+    "emmet.syntaxProfiles": {
+        "czrc":"json"
+    },
+}
