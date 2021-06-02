@@ -7,7 +7,7 @@ module.exports = (
     /**
      * 配置参数
      *
-     * @returns {import('./lib/types/index').RenderOptions}
+     * @returns {GenDoc.RenderOptions}
      */
     async () => {
         const [source] = (await Promise.all([
@@ -48,7 +48,7 @@ module.exports = {
     {
         "lint-staged": {
             "src/**/*.{js,json}": [
-                "eslint"
+                "eslint --fix"
             ]
         }
     }
