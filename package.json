@@ -1,6 +1,6 @@
 {
   "name": "@ads/eslint-config-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ADS的js eslint配置",
   "main": "lib/index.js",
   "scripts": {
