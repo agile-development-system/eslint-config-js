@@ -1,3 +1,12 @@
+## [1.0.4](https://gitee.com/agile-development-system/eslint-config-js/compare/v1.0.3...v1.0.4) (2021-06-02)
+
+
+### Features
+
+* 新增markdown代码块检测 ([7a42b77](https://gitee.com/agile-development-system/eslint-config-js/commits/7a42b77bcdaacd7ce57d45591910f0c26c0443de))
+
+
+
 ## [1.0.3](https://gitee.com/agile-development-system/eslint-config-js/compare/v1.0.2...v1.0.3) (2021-05-31)
 
 
