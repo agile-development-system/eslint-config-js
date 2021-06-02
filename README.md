@@ -1,6 +1,6 @@
 
 # @ads/eslint-config-js
-**版本** ：1.0.3
+**版本** ：1.0.4
 ADS的js eslint配置
 
 ## 快速开始
@@ -78,10 +78,6 @@ module.exports = {
 ## 配置源码
 
 ```js
-/*
- * @Author: 锦阳
- * @Create: 2021年05月24日
- */
 const { FastPath, FastFs } = require('@ads/node-utils');
 const cwdBabelConfigPath = FastPath.getCwdPath('./babel.config.js');
 const hasCwdBabelConfg = FastFs.getPathStatSync(cwdBabelConfigPath);
@@ -94,6 +90,7 @@ module.exports = {
     extends: [
         'standard',
         'plugin:jsdoc/recommended',
+        'plugin:markdown/recommended',
     ],
     plugins: [
         'jsdoc',
@@ -126,7 +123,24 @@ module.exports = {
         'valid-jsdoc': 'off',
         'jsdoc/require-property': 0,
         'jsdoc/require-returns-description': 0,
+        'jsdoc/no-undefined-types': 0,
     },
+    overrides: [
+        // ...
+        {
+            // 1. Target ```js code blocks in .md files.
+            files: ['**/*.md/*.js'],
+            rules: {
+                // 2. Disable other rules.
+                'no-console': 'off',
+                'import/no-unresolved': 'off',
+                'no-undef': 'off',
+                'no-unused-expressions': 'off',
+                'no-unused-vars': 'off',
+                'padded-blocks': 'off',
+            },
+        },
+    ],
 };
 
 ```
