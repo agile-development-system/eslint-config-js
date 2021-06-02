@@ -1,6 +1,6 @@
 
 # @ads/eslint-config-js
-**版本** ：1.0.1
+**版本** ：1.0.3
 ADS的js eslint配置
 
 ## 快速开始
@@ -32,7 +32,7 @@ module.exports = {
 {
     "scripts":{
         "lint": "eslint --ext .js,.vue,.json src",
-        "lint:fix": "eslint --ext .js,.vue,.json src --fix",
+        "lint:fix": "eslint --ext .js,.vue,.json src --fix"
     }
 }
 ```
@@ -48,7 +48,7 @@ module.exports = {
     {
         "lint-staged": {
             "src/**/*.{js,json}": [
-                "eslint"
+                "eslint --fix"
             ]
         }
     }
@@ -64,11 +64,10 @@ module.exports = {
     ```json
     {
         "gitHooks": {
-            "pre-commit": "lint-staged",
+            "pre-commit": "lint-staged"
         },
     }
     ```
-
  <!-- 渲染后缀内容  -->
 
 
