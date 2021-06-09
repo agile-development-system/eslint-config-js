@@ -16,7 +16,7 @@
   "gitHooks": {
     "pre-commit": "lint-staged",
     "commit-msg": "commitlint -e $GIT_PARAMS",
-    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    "prepare-commit-msg": "ads-gc-has-msg && exec < /dev/tty && git cz --hook || true"
   },
   "lint-staged": {
     "**/*.{js,json,md}": [
@@ -36,7 +36,6 @@
   "author": "junyang",
   "license": "MIT",
   "dependencies": {
-    "@ads/node-utils": "^1.0.10",
     "@babel/eslint-parser": "^7.14.3",
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.2",
@@ -49,6 +48,7 @@
   },
   "devDependencies": {
     "@ads/cli-plugin-doc": "^1.0.8",
+    "@ads/node-utils": "^1.0.12",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "commitizen": "^4.2.4",
