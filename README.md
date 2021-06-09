@@ -1,6 +1,5 @@
-
 # @ads/eslint-config-js
-**版本** ：1.0.4
+**版本** ：1.0.5
 ADS的js eslint配置
 
 ## 快速开始
@@ -31,8 +30,8 @@ module.exports = {
 ```json
 {
   "scripts": {
-    "lint": "eslint --ext .js,.vue,.json src",
-    "lint:fix": "eslint --ext .js,.vue,.json src --fix"
+    "lint": "eslint --ext .js,.json,.md src",
+    "lint:fix": "eslint --ext .js,.json,.md src --fix"
   }
 }
 ```
@@ -47,7 +46,7 @@ module.exports = {
     ```json
     {
       "lint-staged": {
-        "src/**/*.{js,json}": [
+        "src/**/*.{js,json,md}": [
           "eslint --fix"
         ]
       }
@@ -126,18 +125,16 @@ module.exports = {
         'jsdoc/no-undefined-types': 0,
     },
     overrides: [
-        // ...
         {
-            // 1. Target ```js code blocks in .md files.
-            files: ['**/*.md/*.js'],
+            files: ['**/*.md/*.{js,json}', 'docs/**', 'test/**'],
             rules: {
-                // 2. Disable other rules.
                 'no-console': 'off',
                 'import/no-unresolved': 'off',
                 'no-undef': 'off',
                 'no-unused-expressions': 'off',
                 'no-unused-vars': 'off',
                 'padded-blocks': 'off',
+                'eol-last': 'off',
             },
         },
     ],
