@@ -1,3 +1,12 @@
+## [1.0.5](https://gitee.com/agile-development-system/eslint-config-js/compare/v1.0.4...v1.0.5) (2021-06-09)
+
+
+### Features
+
+* 对docs和test目录下的文件忽略一些不适合放在文档中的校验规则 ([73bbe2a](https://gitee.com/agile-development-system/eslint-config-js/commits/73bbe2af0277c4c87e925731446155d20f4fac6b))
+
+
+
 ## [1.0.4](https://gitee.com/agile-development-system/eslint-config-js/compare/v1.0.3...v1.0.4) (2021-06-02)
 
 
