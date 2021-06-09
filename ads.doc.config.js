@@ -3,8 +3,6 @@
  * @Create: 2021年05月31日
  */
 const GenDoc = require('@ads/cli-plugin-doc');
-const fs = require('fs-extra');
-const { FastPath } = require('@ads/node-utils');
 module.exports = (
     /**
      * 配置参数
@@ -19,8 +17,8 @@ module.exports = (
             output: 'README.md',
             helpers: {
                 devInstall: true,
-                importCode: fs.readFileSync(FastPath.getCwdPath('./docs/import.js'), { encoding: 'utf-8' }),
-                remark: fs.readFileSync(FastPath.getCwdPath('./docs/usage.md'), { encoding: 'utf-8' }),
+                importCode: GenDoc.getFileContent('./docs/import.js'),
+                remark: GenDoc.getFileContent('./docs/usage.md'),
                 postfixes: [
                     {
                         id: 'source',

@@ -30,10 +30,10 @@ module.exports = {
 
 ```json
 {
-    "scripts":{
-        "lint": "eslint --ext .js,.vue,.json src",
-        "lint:fix": "eslint --ext .js,.vue,.json src --fix"
-    }
+  "scripts": {
+    "lint": "eslint --ext .js,.vue,.json src",
+    "lint:fix": "eslint --ext .js,.vue,.json src --fix"
+  }
 }
 ```
 
@@ -46,11 +46,11 @@ module.exports = {
 - 在`package.json`中添加`pkg['lint-staged']`脚本
     ```json
     {
-        "lint-staged": {
-            "src/**/*.{js,json}": [
-                "eslint --fix"
-            ]
-        }
+      "lint-staged": {
+        "src/**/*.{js,json}": [
+          "eslint --fix"
+        ]
+      }
     }
     ```
 
@@ -63,9 +63,9 @@ module.exports = {
 - 在`package.json`中添加`pkg.gitHooks`脚本
     ```json
     {
-        "gitHooks": {
-            "pre-commit": "lint-staged"
-        },
+      "gitHooks": {
+        "pre-commit": "lint-staged"
+      }
     }
     ```
  <!-- 渲染后缀内容  -->

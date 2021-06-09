@@ -4,10 +4,10 @@
 
 ```json
 {
-    "scripts":{
-        "lint": "eslint --ext .js,.vue,.json src",
-        "lint:fix": "eslint --ext .js,.vue,.json src --fix"
-    }
+  "scripts": {
+    "lint": "eslint --ext .js,.json,.md src",
+    "lint:fix": "eslint --ext .js,.json,.md src --fix"
+  }
 }
 ```
 
@@ -20,11 +20,11 @@
 - 在`package.json`中添加`pkg['lint-staged']`脚本
     ```json
     {
-        "lint-staged": {
-            "src/**/*.{js,json}": [
-                "eslint --fix"
-            ]
-        }
+      "lint-staged": {
+        "src/**/*.{js,json,md}": [
+          "eslint --fix"
+        ]
+      }
     }
     ```
 
@@ -37,8 +37,8 @@
 - 在`package.json`中添加`pkg.gitHooks`脚本
     ```json
     {
-        "gitHooks": {
-            "pre-commit": "lint-staged"
-        },
+      "gitHooks": {
+        "pre-commit": "lint-staged"
+      }
     }
     ```
