@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@ads/cli-plugin-doc": "^1.0.8",
-    "@ads/node-utils": "^1.0.12",
+    "@ads/node-utils": "^1.0.13",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "commitizen": "^4.2.4",
