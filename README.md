@@ -1,12 +1,12 @@
-# @ads/eslint-config-js
+# @agds/eslint-config-js
 **版本** ：1.0.5
-ADS的js eslint配置
+agds的js eslint配置
 
 ## 快速开始
 
 ### 安装
 ```bash
-npm i -D @ads/eslint-config-js
+npm i -D @agds/eslint-config-js
 ```
 
 ### 引入
@@ -14,7 +14,7 @@ npm i -D @ads/eslint-config-js
 // .eslintrc.js
 module.exports = {
     extends: [
-        '@ads/js',
+        '@agds/js',
     ],
 };
 
@@ -77,7 +77,7 @@ module.exports = {
 ## 配置源码
 
 ```js
-const { FastPath, FastFs } = require('@ads/node-utils');
+const { FastPath, FastFs } = require('@agds/node-utils');
 const cwdBabelConfigPath = FastPath.getCwdPath('./babel.config.js');
 const hasCwdBabelConfg = FastFs.getPathStatSync(cwdBabelConfigPath);
 module.exports = {
