@@ -6,11 +6,13 @@ agds的js eslint配置
 ## 快速开始
 
 ### 安装
+
 ```bash
 npm i -D @agds/eslint-config-js
 ```
 
 ### 引入
+
 ```js
 // .eslintrc.js
 module.exports = {
@@ -18,7 +20,6 @@ module.exports = {
         '@agds/js',
     ],
 };
-
 ```
 
 
@@ -140,7 +141,6 @@ module.exports = {
         },
     ],
 };
-
 ```
 
 

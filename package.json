@@ -1,11 +1,11 @@
 {
   "name": "@agds/eslint-config-js",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "agds的js eslint配置",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.vue,.json,.md lib",
-    "lint:fix": "eslint --ext .js,.vue,.json,.md lib --fix",
+    "lint": "eslint --ext .js,.json,.md lib",
+    "lint:fix": "eslint --ext .js,.json,.md lib --fix",
     "docs": "agds-doc",
     "commit": "git add . && git commit --no-edit",
     "postversion": "npm run changelog",
@@ -27,6 +27,9 @@
     "type": "git",
     "url": "https://gitee.com/agile-development-system/eslint-config-js.git"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "eslint",
     "agds",
