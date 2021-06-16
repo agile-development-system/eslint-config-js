@@ -1,3 +1,7 @@
+## [1.0.6](https://gitee.com/agile-development-system/eslint-config-js/compare/v1.0.5...v1.0.6) (2021-06-16)
+
+
+
 ## [1.0.5](https://gitee.com/agile-development-system/eslint-config-js/compare/v1.0.4...v1.0.5) (2021-06-09)
 
 
