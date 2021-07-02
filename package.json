@@ -39,6 +39,7 @@
   "author": "junyang",
   "license": "MIT",
   "dependencies": {
+    "@agds/node-utils": "^1.0.0",
     "@babel/eslint-parser": "^7.14.3",
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.2",
@@ -51,7 +52,6 @@
   },
   "devDependencies": {
     "@agds/cli-plugin-doc": "^1.0.0",
-    "@agds/node-utils": "^1.0.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "commitizen": "^4.2.4",
