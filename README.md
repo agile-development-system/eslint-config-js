@@ -4,7 +4,7 @@
 
 # @agds/eslint-config-js
 
-**版本** ：1.0.6
+**版本** ：1.0.7
 
 agds的js eslint配置
 
