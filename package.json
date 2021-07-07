@@ -1,6 +1,6 @@
 {
   "name": "@agds/eslint-config-js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "agds的js eslint配置",
   "main": "lib/index.js",
   "scripts": {
