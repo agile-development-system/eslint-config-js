@@ -51,7 +51,8 @@
     "eslint-plugin-promise": "^4.3.1"
   },
   "devDependencies": {
-    "@agds/cli-plugin-doc": "^1.0.0",
+    "@agds/agds-doc-preset": "^1.0.6",
+    "@agds/cli-plugin-doc": "^1.0.10",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "commitizen": "^4.2.4",
